@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Estilos -->
+        <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="assets/css/index.css" rel="stylesheet">
+    </head>
+
+    <body class="bg-dark">
+        <!-- Alertas -->
+        <div class="alert hide">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="msg" id="msgWarning">Parece que ya lo has seleccionado</span>
+            <div class="close-btn">
+              <span class="fas fa-times"></span>
+            </div>
+        </div>
+
+        <div class="success hide">
+            <span class="fas fa-check-circle"></span>
+            <span class="msg" id="msgSuccess">Seleccionado correctamente</span>
+            <div class="close-btn">
+              <span class="fas fa-times"></span>
+            </div>
+        </div>
+        <!-- Contenido -->
+        <div class="container bg-light">
+            <div class="row">
+                <div class="col-6">
+                    <label for="formId" class="col-form-label">ID</label>
+                    <input id="formId" class="form-control" type="number">
+                </div>
+                <div class="col-6">
+                    <label for="formName" class="col-form-label">Nombre</label>
+                    <input id="formName" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-4 botones">
+                    <button id="btnCargar" type="button" class="btn btn-success">Cargar JSON</button>
+                    <button id="btnMostrar" type="button" class="btn btn-primary">Mostrar seleccionados</button>
+                </div>
+            </div>
+            <!-- Div para mostrar tablas -->
+            <div class="row" id="tabla">
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src='assets/js/index.js'></script>
+    </body>
+</html>
